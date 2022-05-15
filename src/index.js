@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './App'
 import reportWebVitals from './reportWebVitals';
 import {ApolloProvider} from 'react-apollo';
 import {ApolloClient} from 'apollo-client';
@@ -19,6 +19,22 @@ const apolloClient = new ApolloClient({
   link: httpLink,
   cache
 });
+
+/*
+const CURRENCIES = gql`
+query getCurrencies {
+  currencies {
+    label,
+    symbol
+  }
+}
+`;
+
+apolloClient.query({
+  query: CURRENCIES
+}).then(result => console.log(result));
+*/
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
