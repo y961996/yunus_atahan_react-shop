@@ -3,6 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {ApolloClient} from 'apollo-client';
+import {HttpLink} from 'apollo-link-http';
+import {InMemoryCache} from 'apollo-cache-inmemory';
+
+const GRAPH_QL_API_URL = "http://localhost:4000/";
+const httpLink = new HttpLink({
+  uri: GRAPH_QL_API_URL
+});
+
+const cache = new InMemoryCache();
+
+const apolloClient = new ApolloClient({
+  link: httpLink,
+  cache
+});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
