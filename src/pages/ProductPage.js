@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from './ProductPage.module.css';
+import '../styles/ProductPage.css';
 
 export default class ProductPage extends Component {
   render() {

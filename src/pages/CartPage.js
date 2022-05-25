@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import styles from './CartPage.module.css';
+import React, { Component } from 'react';
+import '../styles/CartPage.css';
 
 export default class CartPage extends Component {
   render() {

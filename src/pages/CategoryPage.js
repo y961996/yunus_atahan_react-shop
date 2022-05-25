@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from './CategoryPage.module.css';
+import '../styles/CategoryPage.css';
 
 export default class CategoryPage extends Component {
   render() {
