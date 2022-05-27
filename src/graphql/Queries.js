@@ -1,29 +1,35 @@
 import { gql } from '@apollo/client';
 
-export const getCategoryNames = gql`
+export const getAllData = gql`
 {
-    categories {
-        name
-    }
-}
-`;
-
-export const getCurrencies = gql`
-{
-    currencies {
-        label,
-        symbol
-    }
-}
-`;
-
-export const getProductById = gql`
-{
-    product(id:$id) {
+  categories {
+    name,
+    products {
+      id,
+      name,
+      inStock,
+      gallery,
+      description,
+      category,
+      attributes {
         id,
         name,
-        inStock,
-        description
+        type,
+        items {
+          displayValue,
+          value,
+          id
+        }
+      }
+      prices {
+        currency {
+          label,
+          symbol
+        }
+        amount
+      }
+      brand
     }
+  }
 }
 `;
