@@ -1,26 +1,31 @@
 import React, { Component } from 'react';
 import '../styles/CategoryPage.css';
 import { connect } from 'react-redux';
-import { ADD_ITEM_TO_CART } from '../redux/ActionTypes';
+import { toggleTest } from '../stores/CartReducer';
 
 class CategoryPage extends Component {
   render() {
     return (
-      <div>CategoryPage</div>
+      <div>
+        CategoryPage
+        TEST: {this.props.test ? <h2>True</h2> : <h2>False</h2>} <br/>
+        <button onClick={this.props.toggleTest}>Toggle TEST</button>
+      </div>
     )
   }
 }
 
-function mapStateToProps(state){
+const mapStateToProps = (state, ownProps) => {
+  const { test } = state.cartReducer
   return {
-    cartItems: state.cartItems,
-  };
-};
+    test,
+  }
+}
 
-function mapDispatchToProps(dispatch){
-  return {
-    addItemToCart: () => dispatch(ADD_ITEM_TO_CART()),
-  };
-};
+const mapDispatchToProps = (dispatch) => {
+  return({
+    toggleTest: () => dispatch(toggleTest()),
+  })
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(CategoryPage);
