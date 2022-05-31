@@ -1,0 +1,242 @@
+header {
+  position: absolute;
+  width: 1440px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 234px;
+  height: 56px;
+  left: 101px;
+  bottom: 0px;
+}
+
+.header_navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+
+  width: 234px;
+  height: 56px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.header_element {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px;
+
+  width: 97px;
+  height: 56px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.padding_left {
+  width: 16px;
+  height: 2px;
+
+  background: #5ECE7B;
+
+  opacity: 0;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.padding_right {
+  width: 16px;
+  height: 2px;
+
+  opacity: 0;
+
+  background: #5ECE7B;
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 30px;
+
+  width: 65px;
+  height: 52px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.label_text {
+  width: 65px;
+  height: 20px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.active_header_element {
+  color: #5ECE7B;
+}
+
+.label_border {
+  width: 65px;
+  height: 2px;
+
+  background: #5ECE7B;
+  opacity: 0;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.a-logo {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  left: 699px;
+  top: calc(50% -41px/2 + 4.5px);
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px;
+  gap: 22px;
+
+  position: absolute;
+  width: 240px;
+  height: 40px;
+  right: 101px;
+  top: 23px;
+}
+
+.layout_spacer {
+  width: 40px;
+  height: 40px;
+
+  opacity: 0;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.spacer_xl {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  background: #B4D2F4;
+  box-shadow: 1px 3px 8px -1px rgba(0, 0, 0, 0.39);
+}
+
+.currency_group {
+  width: 38px;
+  height: 29px;
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.currency_arrow_icon {
+  position: absolute;
+  left: 76.47%;
+  right: 20.59%;
+  top: 53.75%;
+  bottom: 38.75%;
+
+  border: 1px solid #000000;
+}
+
+.currency_frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0px 10px;
+  gap: 12px;
+
+  position: absolute;
+  width: 32px;
+  height: 29px;
+  left: 124px;
+  top: 5.5px;
+}
+
+.currency_symbol_text {
+  width: 12px;
+  height: 29px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+
+  display: flex;
+  align-items: flex-end;
+
+  color: #1D1F22;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.icon_empty_cart {
+  width: 20px;
+  height: 20px;
+
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.cart_icon {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 5.84%;
+  bottom: 4.16%;
+}
