@@ -4,13 +4,11 @@ import { connect } from 'react-redux';
 import { addProduct, removeProduct } from '../stores/ProductsReducer';
 import { useQuery } from '@apollo/client';
 import { getAllDataForPLP } from '../graphql/Queries';
-import Header from '../components/Header';
 
 class CategoryPage extends Component {
   render() {
     return(
       <div>
-        <Header/>
         {false ?? <TestComponent/>}
       </div>
     )

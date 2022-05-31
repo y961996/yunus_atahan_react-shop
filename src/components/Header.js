@@ -42,12 +42,11 @@ export default class Header extends Component {
           <div className='layout_spacer'>
             <div className='spacer_xl'></div>
           </div>
-          <div className='layout_spacer'>
-            <div className='spacer_xl'></div>
+          <div className='layout_spacer2'>
           </div>
           <div className='currency_group'>
             <div className='currency_frame'>
-              <div className='currency_symbol_text'></div>
+              <div className='currency_symbol_text'>$</div>
             </div>
             <Arrow className='currency_arrow_icon'/>
           </div>
